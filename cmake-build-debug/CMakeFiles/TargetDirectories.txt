@@ -1,0 +1,3 @@
+C:/Users/LENOVO/Desktop/compiler project/cmake-build-debug/CMakeFiles/compiler_project.dir
+C:/Users/LENOVO/Desktop/compiler project/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/LENOVO/Desktop/compiler project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,7 @@
+# ninja log v5
+3	1948	7254094962670499	CMakeFiles/compiler_project.dir/main.cpp.obj	517846817d3206d9
+7	206	7254095600737031	compiler_project.exe	7f8cd77210a6d51a
+3	722	7254095319522377	CMakeFiles/compiler_project.dir/lexical.cpp.obj	7e0081dfadf0e65
+2	200	7254096349902815	build.ninja	e243e9529197fa0e
+2	368	7254096349902815	build.ninja	e243e9529197fa0e
+7	366	7254096354909412	compiler_project.exe	4cab8e51aab1a3e1
