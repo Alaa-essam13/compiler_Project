@@ -1,32 +1,29 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <sstream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-vector<string> kw = {"auto", "break", "case", "char", "const", "continue", "default",
+
+vector<string> keyWord = {"auto", "break", "case", "char", "const", "continue", "default",
                      "do", "double", "else", "enum", "float", "for", "goto",
                      "if", "int", "long", "register", "return", "short", "signed",
                      "sizeof", "static", "struct", "switch", "typedef", "union",
                      "unsigned", "void", "volatile", "while","cin>>","cout<<","cin","cout"
                     };
 
-vector<string> op = {"+", "-", "*", "/", "=", "%","<",">"};
+vector<string> operators = {"+", "-", "*", "/", "=", "%","<",">"};
 
-vector<string> num = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+vector<string> digits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
-vector<string> sc = {"@", "!", "#", "$", "&", "(", ")", "{", "}", ";","<<",">>","!"};
+vector<string> specialCharacters = {"@", "!", "#", "$", "&", "(", ")", "{", "}","<<",">>","!"};
 
-void printout(string x)
+void display(string x)
 {
-    if (find(kw.begin(), kw.end(), x) != kw.end())
+    if (find(keyWord.begin(), keyWord.end(), x) != keyWord.end())
         cout << x << " \tkeyword\n";
-    else if (find(op.begin(), op.end(), x) != op.end())
+    else if (find(operators.begin(), operators.end(), x) != operators.end())
         cout << x << " \toperator\n";
-    else if (find(num.begin(), num.end(), x) != num.end())
+    else if (find(digits.begin(), digits.end(), x) != digits.end())
         cout << x << " \tnumber\n";
-    else if (find(sc.begin(), sc.end(), x) != sc.end())
+    else if (find(specialCharacters.begin(), specialCharacters.end(), x) != specialCharacters.end())
         cout << x << " \tspecial character\n";
     else if (x == ";")
         cout << x << " \tseparator\n";
@@ -40,18 +37,18 @@ int main()
     string line;
     getline(cin, line);
 
-    vector<string> v;
-    istringstream iss(line);
+    vector<string> sentece;
+    istringstream sub(line);
     do
     {
         string word;
-        iss >> word;
-        v.push_back(word);
+        sub >> word;
+        sentece.push_back(word);
     }
-    while (iss);
+    while (sub);
 
-    for (auto x : v)
-        printout(x);
+    for (auto x : sentece)
+        display(x);
 
     return 0;
 }
